@@ -1,2 +1,5 @@
+# Web framework
+flask>=2.3.0
+
 # Test dependencies
 pytest>=9.0.0
