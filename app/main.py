@@ -3,7 +3,7 @@ import secrets
 import string
 from typing import Optional
 
-from storage import PasswordStorage
+from app.storage import PasswordStorage
 
 MIN_PASSWORD_LENGTH = 8
 MAX_PASSWORD_LENGTH = 30
