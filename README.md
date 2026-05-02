@@ -49,3 +49,26 @@ Este MVP oferece uma ferramenta simples para gerar senhas complexas, visando mel
 - **v1.3**: Suporte a geração em lote e exportação para arquivo.
 - **v2.0**: Interface gráfica simples (GUI) usando Tkinter ou similar.
 - **Futuro**: Integração com gerenciadores de senhas e APIs para validação de força.
+
+## Checklist de Reprodutibilidade em Máquina Limpa
+
+- [ ] Documentar e usar um ambiente virtual local consistente: `python -m venv .venv`
+- [ ] Incluir instruções de instalação de dependências com `pip install -r requirements.txt`
+- [ ] Corrigir o comando de ativação do ambiente Windows para `./.venv/Scripts/Activate.ps1`
+- [ ] Adicionar instrução para instalar `pytest` ou rodar testes via `python -m pytest`
+- [ ] Explicar claramente como executar o app: `python -m app.main`
+
+## Checklist de Onboarding Técnico
+
+- [ ] Adicionar seção breve sobre a estrutura do projeto e principais arquivos (`app/main.py`, `app/storage.py`, `tests/`)
+- [ ] Incluir como rodar os testes e o que cada suíte cobre
+- [ ] Explicar a convenção de commits utilizada (por exemplo, Conventional Commits)
+- [ ] Documentar como o histórico de senhas é salvo e onde o armazenamento está localizado
+- [ ] Incluir um exemplo de comando completo de clonagem, setup e execução
+
+## Checklist de Uso da IA
+
+- [ ] Incluir uma seção dedicada ao uso de IA, se aplicável ao projeto
+- [ ] Descrever quais prompts ou tipos de assistência são esperados
+- [ ] Incluir exemplos de uso da IA para geração de testes, commits ou documentação
+- [ ] Explicar limitações e contexto necessários para o agente responder corretamente
