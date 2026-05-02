@@ -315,18 +315,25 @@
                     })
                 });
                 
-                const data = await response.json();
-                
                 if (!response.ok) {
-                    throw new Error(data.error || 'Erro ao gerar senhas');
+                    const data = await response.json();
+                    throw new Error(data.error || `Erro HTTP ${response.status}`);
                 }
+                
+                const data = await response.json();
                 
                 // Mostrar resultados
                 displayPasswords(data.passwords);
                 results.classList.add('show');
                 
             } catch (err) {
-                showError(err.message);
+                console.error('Erro ao gerar senhas:', err);
+                
+                if (err.message === 'Failed to fetch') {
+                    showError('Erro de conexão com o servidor. Verifique se o servidor está rodando em http://localhost:5000');
+                } else {
+                    showError(err.message);
+                }
             } finally {
                 loading.classList.remove('show');
                 generateBtn.disabled = false;

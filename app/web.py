@@ -3,9 +3,11 @@ Aplicação web Flask para geração de senhas complexas.
 """
 
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 from app.main import PasswordGenerator, PasswordSuggester
 
 app = Flask(__name__, template_folder='../templates')
+CORS(app)  # Habilitar CORS para todas as rotas
 
 @app.route('/')
 def index():

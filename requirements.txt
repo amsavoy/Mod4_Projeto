@@ -1,5 +1,6 @@
 # Web framework
 flask>=2.3.0
+flask-cors>=4.0.0
 
 # Test dependencies
 pytest>=9.0.0
