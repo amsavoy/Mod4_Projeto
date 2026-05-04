@@ -29,6 +29,7 @@ Este MVP oferece uma ferramenta simples para gerar senhas complexas, visando mel
      ```
       python -m venv .venv
      .\venv\Scripts\Activate.ps1
+     pip install -r requirements.txt
      ```
    - No Linux/Mac:
      ```
