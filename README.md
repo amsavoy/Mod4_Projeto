@@ -27,6 +27,7 @@ Este MVP oferece uma ferramenta simples para gerar senhas complexas, visando mel
 2. **Ative o ambiente virtual**:
    - No Windows (PowerShell):
      ```
+      python -m venv .venv
      .\venv\Scripts\Activate.ps1
      ```
    - No Linux/Mac:
@@ -36,7 +37,8 @@ Este MVP oferece uma ferramenta simples para gerar senhas complexas, visando mel
 
 3. **Execute o script principal**:
    ```
-   python app/main.py
+   python app/main.py or
+   python -m app.main
    ```
 
    Substitua `app/main.py` pelo caminho do arquivo principal se necessário.
